@@ -1,0 +1,25 @@
+{
+  "name": "my-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.2.4",
+    "next": "10.0.6",
+    "postcss": "^8.2.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "react-player": "^2.8.2",
+    "react-slick": "^0.28.0",
+    "rellax": "^1.12.1",
+    "sal.js": "^0.8.2",
+    "smoothscroll-polyfill": "^0.4.4",
+    "tailwindcss": "^2.0.2"
+  }
+}

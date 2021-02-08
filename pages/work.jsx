@@ -44,7 +44,7 @@ const Work = () => {
           <button className="mt-6 bg-red-600 px-12 py-2 rounded-full border-2 border-primary tracking-wide font-medium">Get In Touch</button>
         </div>
         <footer className="py-8 px-8 text-white text-sm bg-primary">
-          <p>© 2021 Ben Addison, all rights reserved</p>
+          <p>© 2021 JCLee, all rights reserved</p>
         </footer>
       </div>
     </Layout>

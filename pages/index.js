@@ -22,7 +22,7 @@ export default function Home() {
     } else {
       setTimeout(() => {
         console.log("waiting for vid to load")
-        canShowVid
+        canShowVid()
       }, 500)
     }
   }

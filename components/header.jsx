@@ -1,8 +1,8 @@
 import Head from "next/head"
-const WEBSITE_TITLE = "Welcome!"
-const WEBSITE_DESCRIPTION = "description"
+const WEBSITE_TITLE = "Ben Addison | Digital Marketing Strategy"
+const WEBSITE_DESCRIPTION = "Are you looking for a digital marketing expert to propulse your business online and generate sales? I'm Ben Addison, and I've been using digital marketing techniques to help businesses make profits online."
 const WEBSITE_URL = ""
-const TWITTER_CARD_SRC = ""
+const TWITTER_CARD_SRC = "/assets/images/twitterCard.png"
 
 const Header = ({ title = "Welcome!" }) => {
   return (

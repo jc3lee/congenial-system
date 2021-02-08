@@ -2,12 +2,13 @@ import Head from "next/head"
 const WEBSITE_TITLE = "Welcome!"
 const WEBSITE_DESCRIPTION = "description"
 const WEBSITE_URL = ""
+const TWITTER_CARD_SRC = ""
 
 const Header = ({ title = "Welcome!" }) => {
   return (
     <Head>
       <title>{WEBSITE_TITLE}</title>
-      <meta name="description" content={WEBSITE_DESCRIPTION} />
+      {/* <meta name="description" content={WEBSITE_DESCRIPTION} />
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -29,7 +30,7 @@ const Header = ({ title = "Welcome!" }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={WEBSITE_TITLE} />
       <meta name="twitter:description" content={WEBSITE_DESCRIPTION} />
-      <meta name="twitter:image" content={TWITTER_CARD_SRC} />
+      <meta name="twitter:image" content={TWITTER_CARD_SRC} /> */}
     </Head>
   )
 }

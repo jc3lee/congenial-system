@@ -6,22 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: colors.blue,
-        green: colors.green,
-        orange: colors.orange,
-        pink: colors.pink,
-        purple: colors.purple,
+        "input-light": "rgba(255, 255, 255, 0.5)",
+        input: "rgba(255, 255, 255, 0.8)",
+        primary: "#050803",
         red: colors.red,
-        teal: colors.teal,
-        yellow: colors.yellow,
       },
       fontFamily: {
-        "lato": ["Lato",],
-        "lora": ["Lora",],
-        "merri": ["Merriweather",],
-        "mont": ["Montserrat",],
-        "open": ["OpenSans",],
-        "rale": ["Raleway",],
         "bot": ["Roboto",],
       },
     },

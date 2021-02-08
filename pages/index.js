@@ -1,11 +1,40 @@
 import Layout from '../components/layout'
 
+const HERO_VID_URL = "assets/videos/hero-dg.mp4"
+
 export default function Home() {
+
+  function handleFormSubmit(e) {
+    e.preventDefault()
+    e.target.reset()
+  }
+
   return (
     <Layout>
-      <div className="w-full h-screen text-4xl flex justify-center items-center">
-        Hello World!
+      <div className="h-screen w-full relative font-bot">
+        <video
+          className="absolute object-cover top-0 left-0 w-full h-full" style={{ filter: "brightness(75%) contrast(115%)" }}
+          muted={true}
+          // autoPlay={true}
+          loop={true}
+          src={HERO_VID_URL}
+        />
+        <div className="relative top-1/2 transform -translate-y-1/2 pb-6 flex flex-col ">
+          <div className="px-4 mt-2 flex flex-col max-w-sm">
+            <h1 className="mt-4 text-white text-4xl font-bold w-full" style={{ maxWidth: "18rem" }}>Take Your <span className="text-red-500">Business</span> to the next level</h1>
+            <p className="mt-8 text-white text-xl font-bold w-full" style={{ maxWidth: "20rem" }}>Start generating new leads and sales now!</p>
+            <p className="mt-20 text-white text-sm w-full" style={{ maxWidth: "20rem" }}>Get practical digital marketing advice straight in your inbox.</p>
+            <form onSubmit={handleFormSubmit} className="flex">
+              <label htmlFor="emailId" className="sr-only">Email</label>
+              <input className="px-4 py-2 flex-1 w-40 text-black bg-input-light hover:bg-input focus:bg-input" style={{ maxWidth: "14rem", }} type="email" name="emailSub" id="emailId" />
+              <button className="capitalize flex items-center px-1.5 bg-red-500 text-primary tracking-wider font-medium text-sm">tell me</button>
+            </form>
+          </div>
+        </div>
       </div>
+      <footer className="z-30 fixed bottom-0 inset-x-0 py-8 px-8 text-white text-sm bg-primary">
+        <p>© 2021 Ben Addison, all rights reserved</p>
+      </footer>
     </Layout>
   )
 }

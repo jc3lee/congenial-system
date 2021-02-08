@@ -1,14 +1,14 @@
 import Head from "next/head"
 const WEBSITE_TITLE = "Ben Addison | Digital Marketing Strategy"
 const WEBSITE_DESCRIPTION = "Are you looking for a digital marketing expert to propulse your business online and generate sales? I'm Ben Addison, and I've been using digital marketing techniques to help businesses make profits online."
-const WEBSITE_URL = ""
+const WEBSITE_URL = "https://congenial-system.vercel.app/"
 const TWITTER_CARD_SRC = "/assets/images/twitterCard.png"
 
 const Header = ({ title = "Welcome!" }) => {
   return (
     <Head>
       <title>{WEBSITE_TITLE}</title>
-      {/* <meta name="description" content={WEBSITE_DESCRIPTION} />
+      <meta name="description" content={WEBSITE_DESCRIPTION} />
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -30,7 +30,7 @@ const Header = ({ title = "Welcome!" }) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={WEBSITE_TITLE} />
       <meta name="twitter:description" content={WEBSITE_DESCRIPTION} />
-      <meta name="twitter:image" content={TWITTER_CARD_SRC} /> */}
+      <meta name="twitter:image" content={TWITTER_CARD_SRC} />
     </Head>
   )
 }

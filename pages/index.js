@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import Layout from '../components/layout'
 
-// const HERO_VID_URL = "assets/videos/hero-dg.mp4"
-const HERO_VID_URL = "assets/videos/RM-01.mp4"
+const HERO_VID_URL = "assets/videos/hero-dg.mp4"
+// const HERO_VID_URL = "assets/videos/RM-01.mp4"
 
 export default function Home() {
   const videoRef = useRef(null)
